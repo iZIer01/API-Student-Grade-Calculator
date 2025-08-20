@@ -49,7 +49,7 @@ h1{
     -webkit-backdrop-filter: blur(4.9px);
     border: 1px solid #7a747499;
 
-    padding: 4rem 3rem;
+    padding: 5.8rem 3rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -171,12 +171,12 @@ input[type=number]::-webkit-inner-spin-button{
 }
 
 table.steelBlueCols {
-  width: 40rem;
+  width: 41rem;
   text-align: center;
   border-collapse: collapse;
 }
 table.steelBlueCols td, table.steelBlueCols th {
-  padding: 1rem 1.4rem;
+  padding: 1rem 1.2rem;
 }
 table.steelBlueCols tbody td {
   font-size: 1rem;
@@ -188,7 +188,7 @@ table.steelBlueCols thead {
   border-bottom: .2rem solid var(--accentColorColor);
 }
 
-table.steelBlueCols thead th {
+table.steelBlueCols thead th {  
   font-size: 1.1rem;
   font-weight: bolder;
   color: var(--accentColorColor);
@@ -196,6 +196,43 @@ table.steelBlueCols thead th {
 }
 
 
+.actionContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+.actionBtn{
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.saveBtn{
+    background-color:#7652e4eb;
+    color: var(--textColor);
+}
+
+.saveBtn:hover{
+    background-color:#573ca7eb;
+    
+}
+.deleteBtn{
+    background-color: #c50505;
+    color: var(--textColor);
+
+}
+
+.deleteBtn:hover{
+    background-color:#860000;
+   
+}
 /* Add mobile media query */
 
 @media (max-width:913px) {
