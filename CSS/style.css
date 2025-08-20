@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-Color:#0f172a;
+    --primaryColor:linear-gradient(90deg,#3987e9,#23c068);
+    --SecondaryColor:linear-gradient(90deg,#7046ee,#3f7cf5);
+    --accentColorColor:#0b1220;
+    --textColor:#F0EAD6;
+}
+
+.background{
+    background: var(--background-Color);
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+
+    color: var(--textColor);
+    font-weight: 800;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+
+.container{
+    display: flexbox;
+}
+
+.calculatorContainer{
+    background: #5c616d48;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #0000001a;
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid #7a747499;
+
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+    
+.inputContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 1.3rem auto;
+}
+
+.weightBody,.ScoreBody,.courseBody{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.courseBody span{
+    color: #0f172a;
+    padding-left: .2rem;
+    font-weight: 700;
+}
+
+.inputLabel{
+    font-size: 1.2rem;
+    color: #fdfdfd;
+
+    margin-bottom: .4rem;
+}
+
+.inputCourse{
+    flex: 1;
+    padding: .7rem 2.3rem;
+    border: solid .1rem #7a747499;
+    border-radius: .8rem;
+    background: var(--accentColorColor);
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.buttonContainer button{
+    flex: 1;
+    padding: 1rem 0;
+    border-radius:1rem;
+    outline: none;
+    border: none;
+    color: var(--textColor);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#addBtn{
+    background:var(--primaryColor);
+}
+
+#addBtn:hover{
+    background: linear-gradient(90deg,#23c068,#3987e9);    
+}
+
+#clearBtn{
+    background:var(--SecondaryColor);
+}
+
+#clearBtn:hover{
+    background: linear-gradient(90deg,#3f7cf5,#7046ee);    
+}
