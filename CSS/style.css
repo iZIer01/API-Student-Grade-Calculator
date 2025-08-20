@@ -32,7 +32,8 @@ h1{
 
 
 .container{
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
 }
 
 .calculatorContainer{
@@ -81,6 +82,12 @@ h1{
     border: solid .1rem #7a747499;
     border-radius: .8rem;
     background: var(--accentColorColor);
+
+    color: var(--textColor);
+}
+
+input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;   
 }
 
 .buttonContainer{
@@ -114,4 +121,39 @@ h1{
 
 #clearBtn:hover{
     background: linear-gradient(90deg,#3f7cf5,#7046ee);    
+}
+
+
+/* Add mobile media query */
+
+@media (max-width:913px) {
+    
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputCourse{
+        padding: .7rem 2rem;
+        width: 20.7rem;
+
+    }
+
+    .buttonContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
 }
