@@ -8,40 +8,92 @@
 </head>
 <body>
     <div class="background">
-        <!-- Main container to hold both Cali and Result Container --> 
-        <div class="container">
-                <h1>Student Grade Calculator</h1>
+        <div class="titleContainer">
+            <h1>Student Grade Calculator</h1>
 
-            <div class="calculatorContainer">
-                <div class="inputContainer">
-                    <div class="courseBody">
-                        <label class="inputLabel" for="inputCourse">Course<span>/Assignment</span></label>
-                        <input type="text" class="inputCourse" name="inputCourse" required >
+            <!-- Main container to hold both Cali and Result Container --> 
+            <div class="container">
+                <div class="calculatorContainer">
+                    <div class="inputContainer">
+                        <div class="courseBody">
+                            <label class="inputLabel" for="inputCourse">Course<span>/Assignment</span></label>
+                            <input type="text" class="inputCourse" name="inputCourse" required >
+                        </div>
+                        <div class="ScoreBody">
+                            <label class="inputLabel" for="scoreCourse">Score(%)</label>
+                            <input type="number" class="inputCourse" name="scoreCourse"  >
+                        </div>
+                        <div class="weightBody">
+                            <label class="inputLabel" for="weightCourse">Weight(%)</label>
+                            <input type="number" class="inputCourse" name="weightCourse" required >
+                        </div>                    
                     </div>
-                    <div class="ScoreBody">
-                        <label class="inputLabel" for="scoreCourse">Score(%)</label>
-                        <input type="number" class="inputCourse" name="scoreCourse"  >
+
+                    <div class="buttonContainer">
+                        <button id="addBtn">Add Record</button>
+                        <button id="clearBtn">Clear All</button>
                     </div>
-                    <div class="weightBody">
-                        <label class="inputLabel" for="weightCourse">Weight(%)</label>
-                        <input type="number" class="inputCourse" name="weightCourse" required >
-                    </div>                    
+
                 </div>
 
-                <div class="buttonContainer">
-                    <button id="addBtn">Add Record</button>
-                    <button id="clearBtn">Clear All</button>
+                <div class="resultContainer">
+                    <div class="headerContainer">
+                        <div class="weightTotalContainer">
+                            <h3>Weighted Total</h3>
+                            <label class="weightTotal">0.00%</label>
+                        </div>
+                        <div class="letterGradeContainer">
+                            <h3>Letter Grade</h3>
+                            <label class="letterGrade">F</label>
+                        </div>                    
+                    </div>
+                    <div class="resultTable">
+                        <table class="steelBlueCols">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Course/Assignment</th>
+                                <th>Score %</th>
+                                <th>Weight %</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>cell1_1</td>
+                                <td>cell2_1</td>
+                                <td>cell3_1</td>
+                                <td>cell4_1</td>
+                            </tr>
+                            <tr>
+                                <td>cell1_2</td>
+                                <td>cell2_2</td>
+                                <td>cell3_2</td>
+                                <td>cell4_2</td>
+                            </tr>
+                            <tr>
+                                <td>cell1_3</td>
+                                <td>cell2_3</td>
+                                <td>cell3_3</td>
+                                <td>cell4_3</td>
+                            </tr>
+                            <tr>
+                                <td>cell1_4</td>
+                                <td>cell2_4</td>
+                                <td>cell3_4</td>
+                                <td>cell4_4</td>
+                            </tr>
+
+                        </tbody>
+                        
+                        </table>
+                    </div>
                 </div>
 
-            </div>
-
-            <div class="resultContainer">
 
             </div>
-
-
-        </div>
-        
+       </div>
+ 
     </div>
     <script src="script.js"></script>
 </body>
