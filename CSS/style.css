@@ -159,7 +159,7 @@ input[type=number]::-webkit-inner-spin-button{
 }
 
 .letterGrade{
-    background-color: #6803035d;
+    background: #b107075d;
     padding: .5rem;
     border: solid .1rem #860000;
     border-radius: 3rem;
