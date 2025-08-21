@@ -163,6 +163,7 @@ input[type=number]::-webkit-inner-spin-button{
     padding: .5rem;
     border: solid .1rem #860000;
     border-radius: 3rem;
+    display: none;
 }
 
 .weightTotal,.letterGrade{
@@ -233,6 +234,80 @@ table.steelBlueCols thead th {
     background-color:#860000;
    
 }
+
+/* Pop Section */
+
+/* Warning Pop Up */
+.warningContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 33rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    background-color: var(--textColor);
+    border-radius: .6rem;
+    visibility:hidden;
+    box-shadow: 0 3px 20px #0c0707a0;
+
+
+}
+
+.warningSign{
+    width: 100%;
+    background-color: #e60606;
+    padding: .7rem 0;
+    border-radius: .6rem .6rem 0 0 ;
+
+
+}
+
+.warningSign svg{
+    width: 20%;
+    fill: var(--textColor);
+}
+
+.warningDescription{
+    margin: 1rem 0;
+
+}
+
+.warningDescription h1{
+    margin: .8rem 0;
+    font-size: 3.1rem;
+    color: #0b1220;
+}
+
+.warningDescription p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.warningDescription button{
+    padding: .7rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+
+
+    font-size: 1.2rem;
+    color: var(--textColor);
+    background-color: #e60606;
+    cursor: pointer;
+}
+
+.warningDescription button:hover{
+    background-color: #860000;
+}
+
+
 /* Add mobile media query */
 
 @media (max-width:913px) {

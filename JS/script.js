@@ -2,8 +2,10 @@
 const course = document.getElementById("Course")
 const weight = document.getElementById("weightCourse")
 const score = document.getElementById("scoreCourse")
+const warningContainer = document.querySelector(".warningContainer")
 
 //Buttons
+const closeBtn = document.querySelector(".closeBtn")
 const addRecBtn = document.getElementById("addBtn");
 
 //Array and Index
@@ -19,9 +21,9 @@ addRecBtn.addEventListener("click", function () {
 
     //making sure user enter appropriate values
     if (course === "") {
-        alert("Please enter a course");
+        popUps.attentionPopUp()
     } else if (isNaN(score) || isNaN(weight)) {
-        alert("Enter a number");
+        popUps.attentionPopUp()
     } else {
 
         const StudentDetails = {
@@ -75,10 +77,7 @@ addRecBtn.addEventListener("click", function () {
                     letterGrade.style.borderColor = "#860000";
                 }
                 // making letter grade visible to see
-                if (letterGrade.style.display === "none"){
-                    letterGrade.style.display = "inline";
-                }
-
+                letterGrade.style.display = "inline";
             },
             storeRecord:function(){
                 studentsRecords.push(
@@ -138,3 +137,14 @@ addRecBtn.addEventListener("click", function () {
 });
 
     
+// creating a group of Pops 
+const popUps = {
+    attentionPopUp: function(){
+        warningContainer.style.visibility = "visible";
+    }
+}
+
+closeBtn.addEventListener("click",()=>{
+    warningContainer.style.visibility = "hidden";
+
+})
