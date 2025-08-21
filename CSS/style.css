@@ -96,6 +96,7 @@ input[type=number]::-webkit-inner-spin-button{
     -webkit-appearance: none;   
 }
 
+/* Main Button Section */
 .buttonContainer{
     display: flex;
     justify-content: center;
@@ -127,6 +128,45 @@ input[type=number]::-webkit-inner-spin-button{
 
 #clearBtn:hover{
     background: linear-gradient(90deg,#3f7cf5,#7046ee);    
+}
+
+
+
+/* login section */
+
+.loginContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: .2rem auto;
+}
+
+.optionBtn{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.optionBtn button{
+    background-color: transparent;
+    height: 3.3rem;
+    width: 3.3rem;
+
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 70%;
+    border: none;
+    outline: none;
+
+}
+
+.optionBtn svg{
+    width: 100%;
+    fill: var(--textColor);
 }
 
 
@@ -306,7 +346,6 @@ table.steelBlueCols thead th {
 .warningDescription button:hover{
     background-color: #860000;
 }
-
 
 /* Add mobile media query */
 

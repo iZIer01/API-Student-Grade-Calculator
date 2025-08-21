@@ -7,7 +7,7 @@ const warningContainer = document.querySelector(".warningContainer")
 //Buttons
 const closeBtn = document.querySelector(".closeBtn")
 const addRecBtn = document.getElementById("addBtn");
-
+const clearAllBtn = document.getElementById("clearBtn");
 //Array and Index
 let studentsRecords = []
 let index = 1
@@ -78,6 +78,8 @@ addRecBtn.addEventListener("click", function () {
                 }
                 // making letter grade visible to see
                 letterGrade.style.display = "inline";
+
+
             },
             storeRecord:function(){
                 studentsRecords.push(
@@ -123,6 +125,7 @@ addRecBtn.addEventListener("click", function () {
                 tr.appendChild(tdActionBtn)                                                
                 tbody.appendChild(tr)
 
+
             }
     }
 
@@ -136,7 +139,24 @@ addRecBtn.addEventListener("click", function () {
 
 });
 
+
+//clear all data from the table 
+clearAllBtn.addEventListener("click",()=>{
     
+    studentsRecords = []
+    index = 1
+
+    const tBody = document.querySelector("tbody");
+    tBody.innerHTML = " "
+
+    const letterGrade = document.querySelector(".letterGrade")
+    const weightTotal = document.querySelector(".weightTotal");
+
+    letterGrade.style.display = "none"
+    weightTotal.innerText = "0.00%"
+
+})
+
 // creating a group of Pops 
 const popUps = {
     attentionPopUp: function(){
