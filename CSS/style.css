@@ -78,7 +78,6 @@ h1{
 .inputLabel{
     font-size: 1.2rem;
     color: var(--textColor);
-
     margin-bottom: .4rem;
 }
 
@@ -88,8 +87,11 @@ h1{
     border: solid .1rem #7a747499;
     border-radius: .8rem;
     background: var(--accentColorColor);
-
     color: var(--textColor);
+}
+
+.inputCourse:focus{
+    outline-color:#7046ee ;
 }
 
 input[type=number]::-webkit-inner-spin-button{
@@ -278,7 +280,7 @@ table.steelBlueCols thead th {
 /* Pop Section */
 
 /* Warning Pop Up */
-.warningContainer{
+.warningContainer, .ExceedingWeight{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,28 +310,28 @@ table.steelBlueCols thead th {
 
 }
 
-.warningSign svg{
+.warningSign svg, .ExceedingWeight svg{
     width: 20%;
     fill: var(--textColor);
 }
 
-.warningDescription{
+.warningDescription, .ExceedingWeight{
     margin: 1rem 0;
 
 }
 
-.warningDescription h1{
+.warningDescription h1, .ExceedingWeight h1{
     margin: .8rem 0;
     font-size: 3.1rem;
     color: #0b1220;
 }
 
-.warningDescription p{
+.warningDescription p, .ExceedingWeight p{
     font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
-.warningDescription button{
+.warningDescription button, .ExceedingWeight button{
     padding: .7rem 2rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
@@ -343,9 +345,10 @@ table.steelBlueCols thead th {
     cursor: pointer;
 }
 
-.warningDescription button:hover{
+.warningDescription button:hover, .ExceedingWeight button:hover{
     background-color: #860000;
 }
+
 
 /* Add mobile media query */
 
